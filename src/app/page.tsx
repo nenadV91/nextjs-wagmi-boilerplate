@@ -1,21 +1,21 @@
-import { Account } from '../components/Account'
-import { Balance } from '../components/Balance'
-import { BlockNumber } from '../components/BlockNumber'
-import { ConnectKitButton } from '../components/ConnectKitButton'
-import { Connected } from '../components/Connected'
-import { NetworkSwitcher } from '../components/NetworkSwitcher'
-import { ReadContract } from '../components/ReadContract'
-import { ReadContracts } from '../components/ReadContracts'
-import { ReadContractsInfinite } from '../components/ReadContractsInfinite'
-import { SendTransaction } from '../components/SendTransaction'
-import { SendTransactionPrepared } from '../components/SendTransactionPrepared'
-import { SignMessage } from '../components/SignMessage'
-import { SignTypedData } from '../components/SignTypedData'
-import { Token } from '../components/Token'
-import { WatchContractEvents } from '../components/WatchContractEvents'
-import { WatchPendingTransactions } from '../components/WatchPendingTransactions'
-import { WriteContract } from '../components/WriteContract'
-import { WriteContractPrepared } from '../components/WriteContractPrepared'
+import { Account } from "@/src/components/WagmiDefaults/Account";
+import { Balance } from "@/src/components/WagmiDefaults/Balance";
+import { BlockNumber } from "@/src/components/WagmiDefaults/BlockNumber";
+import { ConnectKitButton } from "@/src/components/WagmiDefaults/ConnectKitButton";
+import { Connected } from "@/src/components/WagmiDefaults/Connected";
+import { NetworkSwitcher } from "@/src/components/WagmiDefaults/NetworkSwitcher";
+import { ReadContract } from "@/src/components/WagmiDefaults/ReadContract";
+import { ReadContracts } from "@/src/components/WagmiDefaults/ReadContracts";
+import { ReadContractsInfinite } from "@/src/components/WagmiDefaults/ReadContractsInfinite";
+import { SendTransaction } from "@/src/components/WagmiDefaults/SendTransaction";
+import { SendTransactionPrepared } from "@/src/components/WagmiDefaults/SendTransactionPrepared";
+import { SignMessage } from "@/src/components/WagmiDefaults/SignMessage";
+import { SignTypedData } from "@/src/components/WagmiDefaults/SignTypedData";
+import { Token } from "@/src/components/WagmiDefaults/Token";
+import { WatchContractEvents } from "@/src/components/WagmiDefaults/WatchContractEvents";
+import { WatchPendingTransactions } from "@/src/components/WagmiDefaults/WatchPendingTransactions";
+import { WriteContract } from "@/src/components/WagmiDefaults/WriteContract";
+import { WriteContractPrepared } from "@/src/components/WagmiDefaults/WriteContractPrepared";
 
 export function Page() {
   return (
@@ -90,7 +90,7 @@ export function Page() {
         <WriteContractPrepared />
       </Connected>
     </>
-  )
+  );
 }
 
-export default Page
+export default Page;
