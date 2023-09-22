@@ -14,7 +14,9 @@ export function Providers({ children }: { children: React.ReactNode }) {
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
 
-  (window as any).viem = viem;
+  if (typeof window != "undefined") {
+    (window as any).viem = viem;
+  }
 
   return (
     <WagmiConfig config={config}>
